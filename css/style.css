@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: 1px solid black;*/
+}
+/*
+.= llamado de una clase
+#= llamado de un ID
+*/
+/*SPV= SELECTOR - PROPIEDAD - VALOR*/
+/*LOS SELECTORES SON TODAS NUESTRAS ETIQUETAS HTML*/
+/*PARTIMOS DE UN ORDEN JERARQUICO PARA LLEGAR A LA IMAGEN = SELECTORES*/
+/*DENTRO APLICAMOS PROPIEDADES Y A ESAS PROPIEDADES SUS RESPECTIVOS VALORES*/
+.banner img {
+    /*TIPOS DE MEDIDAS: 
+    %= SE ADAPTA A LA PANTALLA Y 
+    PX= TAMAÑO FIJO
+    VH= TAMAÑO
+    VW=*/
+    width: 100%;/*WIDTH: ANCHO--px o %*/
+    height: 100vh;/*ALTURA-- px o %*/
+}
+
+#main{
+    min-width: 100vh;
+}
+
+
+.banner p{
+    font-size: 50px;
+    background-color: rgb(15, 68, 15);
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    font-family: 'Exo 2', sans-serif;
+}
+.textbanner{
+    color: white;
+}
+/*HEADER Y NAV*/
+header{
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    position: sticky;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li{
+    display: inline;
+    font-size: 18px;
+    margin-left: 10px;
+}
+header nav ul li a{
+    font-size: 20px; 
+    margin-left: 10px;
+}
+header nav img{
+    width: 4%;
+    border-radius: 100%;
+}
+#nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#nav a:hover{
+    color: white;
+}
+.logo{
+    width: 40px;
+}
+.d-flex{
+    margin-left: 400px;
+}
+/*HEADER Y NAV*/
+
+
+/*BODY*/
+body {
+    background-color: rgb(15, 68, 15);
+}
+/*BODY*/
+
+/*TIPO DE LETRA*/
+.Destacados h2{
+    font-family: 'Anton', sans-serif;
+}
+/*MAIN PRODUCTOS DESTACADOS*/
+
+.Destacados h2 {
+    text-align: top;
+    font-size: 25px;
+    margin-left: 5px;
+}
+.Destacados .productos__dest {
+    height: 220px;
+    width: 220px;
+    display: inline-block;
+    border-radius: 30px;
+    margin: 20px;
+}
+.Destacados .productos__dest img{
+    height: 220px;
+    width: 220px;
+}
+/*MAIN PRODUCTOS DESTACADOS*/
+
+/*FOOTER*/
+#footer{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+/*FOOTER REDES*/
+.footer_redes img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.footer_redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 500px;
+}
+
+/*FOOTER LINKS*/
+.footer_links ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 530px;
+}
+/*FOOTER*/
