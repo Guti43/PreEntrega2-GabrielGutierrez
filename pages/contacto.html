@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/jpg" href="icons/favicon.jpg">
+        <link rel="icon" type="image/jpg" href="../icons/favicon.jpg">
+        <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/style.css">
         <title>CONTACTO</title>
@@ -23,17 +25,55 @@
                     <li><a href="nosotros.html">NOSOTROS</a></li> 
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
             </nav>
         </header>
         <!--contenido de la pagina-->
         <main>
-            <section>
+            <section class="titulo_contacto">
                 <h1>CONTACTO</h1>
             </section>
-            <section>
+            <div class="parte1">
+                <article class="tex_emailcontacto">
+                    <img class="iconocorreo"src="../icons/correo-electronico-vacio.png" alt="correo">
+                    <h1 class="titulo_email">EMAIL</h1>
+                    <h4 class="correo_ow">Owventas@gmail.com</h4>
+                </article>
+                <article class="mensajes">
+                    Nombre:
+                    <form action="#" class="nombre_form">
+                        <input type="text" id="inputnombre" placeholder="">
+                    </form>
+                    Email:
+                    
+                    <form action="#">
+                        
+                    <label for="email">
+                        <input type="email" id="inputemail">
+                        
+                    </label>
+                    <label for="telefono" class="telefonolabel">Número de Teléfono:</label>
+                    <input type="text" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <label for="mensaje" class="mensajelabel">Mensaje:</label>
+                        <textarea name="mensaje" id="mensaje" cols="72" rows="10" placeholder="Escriba su mensaje aquí"></textarea>
+                    </form>
+                </article>
+            </div>
+            <div class="parte2">
+                <article class="text_dircontacto">
+                    <img class="iconomap" src="../icons/mapa.png" alt="direccion">
+                    <h1 class="titulo_direccion">DIRECCIÓN</h1>
+                    <h4 class="direccionav">Av.Ricardo Rojas 8473,Córdoba</h4>
+                </article>
+                <article class="googlemaps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13631.2425274672!2d-64.27795383465576!3d-31.336602499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329c31d801707f%3A0xdfa6c403a48ec72a!2sRojas%20F%C3%BAtbol%20Club!5e0!3m2!1ses!2sar!4v1698188673083!5m2!1ses!2sar" width="400" 
+                    height="300" style="border:0;" allowfullscreen="" loading="
+                    lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </article>
+            </div>
+            <!--<section>
                 <article>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13631.2425274672!2d-64.27795383465576!3d-31.336602499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329c31d801707f%3A0xdfa6c403a48ec72a!2sRojas%20F%C3%BAtbol%20Club!5e0!3m2!1ses!2sar!4v1698188673083!5m2!1ses!2sar" width="400" 
                     height="300" style="border:0;" allowfullscreen="" loading="
@@ -42,35 +82,48 @@
                 <article>
                     <form action="#">
                         <input type="text" placeholder="Nombre:">
-                        <br> 
                         <label for="email">
                             Email:
-                            <br>
                             <input type="email">
                         </label>
                         <label for="menaje">
-                            <br>
                             Mensaje:
-                            <br>
                             <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea> 
                         </label>
-                        <br> <p>Elegir empresa</p>
+                            <p>Elegir empresa</p>
                         <select name="vuelo" id="vuelo">
                             <option value="Empresa1">Empresa1</option>
                             <option value="Empresa2">Empresa2</option>
                             <option value="Empresa3">Empresa3</option>
                         </select>
                         
-                        <br>
+
 
                         <input type="submit" value="Enviar">
                         <br>
                         <input type="reset" value="Resetear"> 
                     </form>
                 </article>
-            </section>
+            </section>-->
         </main>
-        <footer>
+        <footer id="footer">
+            <article class="dsds">
+                <p>CONTACTANOS</p>
+            </article>
+            <article class="footer_links">
+                <ul>
+                    <li><a href="../index.html">INICIO</a></li> <!--LINK DE ACERCA DE, INICIO,ETC-->
+                    <li><a href="productos.html">PRODUCTOS</a></li> <!--LINK DE ACERCA DE, INICIO,ETC-->
+                    <li><a href="#">CONTACTO</a></li> <!--LINK DE ACERCA DE, INICIO,ETC-->
+                    <li><a href="guia_de_talles.html">GUIA DE TALLES</a></li> <!--LINK DE ACERCA DE, INICIO,ETC-->
+                    <li><a href="nosotros.html">NOSOTROS</a></li> <!--LINK DE ACERCA DE, INICIO,ETC-->
+                </ul>
+            </article>
+            <article class="footer_redes">
+                <a href=""><img src="../icons/whatsapp.PNG" alt="Whatsapp"></a>
+                <a href="https://www.instagram.com/"><img src="../icons/ig.PNG" alt="Instagram"></a>
+                <a href="https://twitter.com/home?lang=es"><img src="../icons/tw.PNG" alt="Twitter"></a>
+            </article>
         </footer>
 
 
