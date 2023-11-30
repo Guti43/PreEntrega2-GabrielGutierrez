@@ -60,7 +60,7 @@ header nav ul li{
     margin-left: 10px;
 }
 header nav ul li a{
-    font-size: 18px; 
+    font-size: 16px; 
     margin-left: 10px;
     text-decoration: none;
     color: white;
@@ -83,7 +83,7 @@ header nav img{
 }
 
 .d-flex{
-    width: 600px;
+    width: 100vh;
     margin-left: 30px;
 }
 /*HEADER Y NAV*/
@@ -535,7 +535,20 @@ body {
 .mensajelabel{
     display: flex; 
 }
-
+.BottonEnv{
+    padding: 10px;
+    margin-left: 200px;
+}
+.enviar-btn{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.enviar-btn:hover{
+    color: gray;
+}
 /*PARTE 1*/
 /*PARTE 2*/
 .iconomap{
@@ -564,4 +577,243 @@ body {
 /*PARTE 2*/
 /*PAGINA CONTACTO*/
 
+/*===========================================================================*/
+/*MEDIA PRODUCTOS DESTACADOS-INICIO*/
+/*===========================================================================*/
+@media (max-width: 768px) {
+    #DestacadosProds{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 400px);
+        grid-template-areas: 
+        /*COL1                   COL2     */
+        "prodestacadosGrid1 prodestacadosGrid2"  /*FILA 1*/
+        "prodestacadosGrid1 prodestacadosGrid4"  /*FILA 2*/
+        "prodestacadosGrid3 prodestacadosGrid5"  /*FILA 3*/
+    }
+}
+
+@media (max-width: 480px) {
+    #DestacadosProds{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 400px);
+        background-size: cover;
+        background-position: center;
+        grid-template-areas: 
+        /*COL1                   COL2     */
+        "prodestacadosGrid1"  /*FILA 1*/
+        "prodestacadosGrid1"  /*FILA 2*/
+        "prodestacadosGrid2" /*FILA 3*/
+        "prodestacadosGrid3"
+        "prodestacadosGrid4"
+        "prodestacadosGrid5"
+        
+    }
+}
+/*===========================================================================*/
+/*MEDIA FOOTER*/
+/*===========================================================================*/
+@media (max-width: 1200px){
+    .footer_redes img{
+        height: 50px;
+        width: 50px;
+    }
+    .footer_redes{
+        padding-left: 150px;
+    }
+    .footer_links ul li a{
+        padding-left: 150px;
+    }
+    .dsds{
+        height: 70px;
+        width: 70px;
+    }
+}
+@media(max-width: 785px){
+    #footer{
+        flex-direction: column;
+    }
+    .footer_links ul li a{
+        padding-left: 0;
+    }
+    .footer_redes{
+        padding-left: 50px;
+    }
+}
+@media(max-width: 580px){
+    #footer{
+        width: 100vh;
+    }
+}
+/*===========================================================================*/
+/*MEDIA NAV*/
+/*===========================================================================*/
+@media(max-width: 950px){
+    header{
+        display: block;
+        text-align: center;
+        margin-top: 0;
+        height: 150px;
+    }
+    #nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(max-width: 785px){
+    .d-flex{
+        width: 500px;
+    }
+}
+@media(max-width: 690px){
+    header nav ul li a{
+        font-size: 12px;
+    }
+}
+@media(max-width: 590px){
+    header nav ul li a{
+        font-size: 10px;
+    }
+    .d-flex{
+        width: 300px;
+    }
+    header{
+        width: 100vh;
+    }
+}
+/*===========================================================================*/
+/*MEDIA MAIN*/
+/*===========================================================================*/
+@media (max-width:1000px){
+    .banner p{
+        font-size: 40px;
+    }
+}
+@media (max-width:768px){
+    .banner p{
+        font-size: 30px;
+    }
+}
+@media (max-width:480px){
+    .banner p{
+        font-size: 20px;
+        left: 39%;
+    }
+}
+/*===========================================================================*/
+/*MEDIA PAG PRODUCTOS GRID 1*/
+/*===========================================================================*/
+@media (max-width: 768px) {
+    #prod_img{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 400px);
+        grid-template-areas: 
+    /*COL1      COL2  */
+    "prodGridp1 prodGridr2" /*FILA 1*/
+    "prodGridp1 prodGridr4" /*FILA 2*/
+    "prodGridr1 prodGridr3"
+    ;
+    }
+}
+@media (max-width: 580px) {
+    #prod_img{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 400px);
+        grid-template-areas: 
+    /*COL1      COL2  */
+    "prodGridp1" /*FILA 1*/
+    "prodGridp1" /*FILA 2*/
+    "prodGridr1"
+    "prodGridr2"
+    "prodGridr3"
+    "prodGridr4";
+    width: 100vh;
+    }
+}
+/*===========================================================================*/
+/*MEDIA PAG PRODUCTOS GRID 2*/
+/*===========================================================================*/
+@media (max-width: 768px) {
+    #prod_img2{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 400px);
+        grid-template-areas: 
+    /*COL1      COL2  */
+    "prodGridp2 prodGridber1" /*FILA 1*/
+    "prodGridp2 prodGridber2" /*FILA 2*/
+    "prodGridz1 prodGridz2"
+    ;
+    }
+}
+@media (max-width: 580px) {
+    #prod_img2{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 400px);
+        grid-template-areas: 
+    /*COL1      COL2  */
+    "prodGridp2" /*FILA 1*/
+    "prodGridp2" /*FILA 2*/
+    "prodGridber1"
+    "prodGridber2"
+    "prodGridz1"
+    "prodGridz2"
+    ;
+    width: 100vh;
+    }
+    .Tituloprincipal{
+        width: 100vh;
+    }
+}
+/*===========================================================================*/
+/*MEDIA PAG PRODUCTOS GRID 3*/
+/*===========================================================================*/
+@media (max-width: 768px) {
+    #prod_img3{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 400px);
+        grid-template-areas: 
+    /*COL1      COL2  */
+    "prodGridbz1 prodGridbz2" /*FILA 1*/
+    "prodGridcamisa prodGridremleb" /*FILA 2*/
+    "prodGridmuscl prodGridpiluso"
+    ;
+    }
+}
+@media (max-width: 580px) {
+    #prod_img3{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 400px);
+        grid-template-areas: 
+    /*COL1      COL2  */
+    "prodGridbz1" /*FILA 1*/
+    "prodGridbz2" /*FILA 2*/
+    "prodGridremleb"
+    "prodGridcamisa"
+    "prodGridpiluso"
+    "prodGridmuscl";
+    width: 100vh;
+    }
+}
 /*PAGINA NOSOTROS*/
+.title_nosotros{
+    font-family:"Irish Grover";
+    background-color: white;
+    text-align: center;
+}
+.parte1nosotros{
+    height: 330px;
+    display: flex;
+    text-align: center;
+}
+.localft{
+    height: 300px;
+    width: 500px;
+}
+.parte2nosotros{
+    height: 330px;
+    display: flex;
+    text-align: center;
+}
+.fto_nosotros{
+    height: 300px;
+    width: 500px;
+}
