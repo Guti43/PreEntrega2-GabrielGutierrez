@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Comprá productos de Indumentaria por internet. Tenemos camisas, remeras y más. Hacé tu pedido, pagalo online y recibilo donde quieras.">
+        <meta name="keywords" content="remeras, pantalones, camisas, accesible, ofertas">
         <link rel="icon" type="image/jpg" href="../icons/favicon.jpg">
         <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
@@ -42,25 +44,19 @@
                     <h4 class="correo_ow">Owventas@gmail.com</h4>
                 </article>
                 <article class="mensajes">
-                    Nombre:
                     <form action="#" class="nombre_form">
-                        <input type="text" id="inputnombre" placeholder="">
-                    </form>
-                    Email:
-                    
-                    <form action="#">
+                        <label for="inputnombre">Nombre:</label>
+                        <input type="text" id="inputnombre" name="inputnombre" placeholder="Ingresar nombre y apellido">
                         
-                    <label for="email">
-                        <input type="email" id="inputemail">
+                        <label for="inputemail">Email:</label>
+                        <input type="email" id="inputemail" name="inputemail" placeholder="dads@gmail.com">
                         
-                    </label>
-                    <label for="telefono" class="telefonolabel">Número de Teléfono:</label>
-                    <input type="text" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                    <label for="mensaje" class="mensajelabel">Mensaje:</label>
-                        <textarea name="mensaje" id="mensaje" cols="72" rows="10" placeholder="Escriba su mensaje aquí"></textarea>
-                    </form>
-                    <form class="BottonEnv" action="#" method="post">
-                        <button type="submit" class="enviar-btn" formaction="javascript:void(0)">Enviar</button>
+                        <label for="telefono" class="telefonolabel">Número de Teléfono:</label>
+                        <input type="text" placeholder="123-123-1234" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        
+                        <label for="mensaje" class="mensajelabel">Mensaje:</label>
+                        <textarea name="mensaje" id="mensaje" cols="72" rows="10" placeholder="Mensaje o comentario" style="resize: none;"></textarea>
+                        <button type="submit" class="enviar-btn">Enviar</button>
                     </form>
                 </article>
             </div>
@@ -123,13 +119,11 @@
                 </ul>
             </article>
             <article class="footer_redes">
-                <a href=""><img src="../icons/whatsapp.PNG" alt="Whatsapp"></a>
-                <a href="https://www.instagram.com/"><img src="../icons/ig.PNG" alt="Instagram"></a>
-                <a href="https://twitter.com/home?lang=es"><img src="../icons/tw.PNG" alt="Twitter"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="../icons/whatsapp.PNG" alt="Whatsapp"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../icons/ig.PNG" alt="Instagram"></a>
+                <a href="https://twitter.com/home?lang=es" target="_blank"><img src="../icons/tw.PNG" alt="Twitter"></a>
             </article>
         </footer>
-
-
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>

@@ -1,0 +1,61 @@
+
+/*===========================================================================*/
+/*MEDIA PRODUCTOS DESTACADOS-INICIO*/
+/*===========================================================================*/
+@media (max-width: 768px) {
+    #DestacadosProds{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 400px);
+        grid-template-areas: 
+        /*COL1                   COL2     */
+        "prodestacadosGrid1 prodestacadosGrid2"  /*FILA 1*/
+        "prodestacadosGrid1 prodestacadosGrid4"  /*FILA 2*/
+        "prodestacadosGrid3 prodestacadosGrid5"  /*FILA 3*/
+    }
+}
+@media(max-width: 590px){
+    #DestacadosProds{
+        width: 100vh;
+    }
+    .destacados_titulo{
+        width: 100vh;
+    }
+}
+
+@media (max-width: 480px) {
+    #DestacadosProds{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 400px);
+        background-size: cover;
+        background-position: center;
+        grid-template-areas: 
+        /*COL1                   COL2     */
+        "prodestacadosGrid1"  /*FILA 1*/
+        "prodestacadosGrid1"  /*FILA 2*/
+        "prodestacadosGrid2" /*FILA 3*/
+        "prodestacadosGrid3"
+        "prodestacadosGrid4"
+        "prodestacadosGrid5"
+        
+    }
+}
+
+/*===========================================================================*/
+/*MEDIA MAIN*/
+/*===========================================================================*/
+@media (max-width:1000px){
+    .banner p{
+        font-size: 40px;
+    }
+}
+@media (max-width:768px){
+    .banner p{
+        font-size: 30px;
+    }
+}
+@media (max-width:480px){
+    .banner p{
+        font-size: 20px;
+        left: 39%;
+    }
+}

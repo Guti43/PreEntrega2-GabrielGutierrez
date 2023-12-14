@@ -1,0 +1,64 @@
+/*TIPO DE LETRA*/
+.destacados_titulo{
+    font-family:"Irish Grover";
+    color: #ffffff;
+    background-color: black;
+    font-size: 24px;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+/*MAIN PRODUCTOS DESTACADOS*/
+/*GRID PROD DESTACADOS*/
+
+#DestacadosProds{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 350px 350px ;
+    gap: 15px;
+    padding: 5px;
+    /*row-gap: ;
+    column-gap: ;*/ 
+    grid-template-areas: 
+    /*COL1      COL2     COL3*/
+    "prodestacadosGrid1 prodestacadosGrid2 prodestacadosGrid3" /*FILA 1*/
+    "prodestacadosGrid1 prodestacadosGrid4 prodestacadosGrid5" /*FILA 2*/
+}
+
+.prodestacadosGrid1{
+    background-image: url(../images/remgears.PNG);
+    background-size: cover;
+    background-position: center;
+}
+.prodestacadosGrid2{
+    background-image: url(../images/rempirates.PNG);
+    background-size: cover;
+    background-position: center;
+}
+.prodestacadosGrid3{
+    background-image: url(../images/remtiger.PNG);
+    background-size: cover;
+    background-position: center;
+}
+.prodestacadosGrid4{
+    background-image: url(../images/pantverde.PNG);
+    background-size: cover;
+    background-position: center;
+}
+.prodestacadosGrid5{
+    background-image: url(../images/pantnegro.PNG);
+    background-size: cover;
+    background-position: center;
+}
+
+.prodestacadosGrid1{
+    grid-area: prodestacadosGrid1;
+}
+.title_destacado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Anton', sans-serif;
+    background-color: white;
+}
+

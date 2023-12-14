@@ -1,0 +1,35 @@
+/*
+.= llamado de una clase
+#= llamado de un ID
+*/
+/*SPV= SELECTOR - PROPIEDAD - VALOR*/
+/*LOS SELECTORES SON TODAS NUESTRAS ETIQUETAS HTML*/
+/*PARTIMOS DE UN ORDEN JERARQUICO PARA LLEGAR A LA IMAGEN = SELECTORES*/
+/*DENTRO APLICAMOS PROPIEDADES Y A ESAS PROPIEDADES SUS RESPECTIVOS VALORES*/
+.banner img {
+    /*TIPOS DE MEDIDAS: 
+    %= SE ADAPTA A LA PANTALLA Y 
+    PX= TAMAÑO FIJO
+    VH= TAMAÑO
+    VW=*/
+    width:100%;/*WIDTH: ANCHO--px o %*/
+    height: 100vh;/*ALTURA-- px o %*/
+}
+
+#main{
+    min-width: 100%;
+}
+
+
+.banner p{
+    font-size: 50px;
+    background-color: rgb(108, 156, 148);
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    font-family: 'Kanit', sans-serif;
+}
+.textbanner{
+    color: rgb(37, 27, 27);
+}
+

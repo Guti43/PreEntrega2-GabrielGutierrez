@@ -1,0 +1,318 @@
+/*PAGINA PRODUCTOS*/
+.Tituloprincipal{
+    font-family:"Irish Grover";
+    background-color: white;
+    text-align: center;
+}
+/*GRID 1*/
+#prod_img{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 350px 350px ;
+    gap: 15px;
+    padding: 5px;
+    /*row-gap: ;
+    column-gap: ;*/ 
+    grid-template-areas: 
+    /*COL1      COL2     COL3*/
+    "prodGridr1 prodGridr2 prodGridp1" /*FILA 1*/
+    "prodGridr3 prodGridr4 prodGridp1" /*FILA 2*/
+    ;
+}
+
+
+.prodGridr1{
+    grid-area: prodGridr1;
+}
+.prodGridr2{
+    grid-area: prodGridr2;
+}
+.prodGridp1{
+    grid-area: prodGridp1;
+}
+.prodGridr3{
+    grid-area: prodGridr3;
+}
+.prodGridr4{
+    grid-area: prodGridr4;
+}
+
+
+.prodGridr1{
+    background-image: url(../images/rem1.PNG);
+    background-size: cover;
+    background-position: center;
+}
+.prodGridr2{
+    background-image: url(../images/rem2.PNG);
+    background-size: cover;
+    background-position: center;
+}
+.prodGridp1{
+    background-image: url(../images/pant1.PNG);
+    background-size: cover;
+    background-position: center;
+}
+.prodGridr3{
+    background-image: url(../images/rem3.PNG);
+    background-size: cover;   
+    background-position: center;
+}
+.prodGridr4{
+    background-image: url(../images/rem4.PNG);
+    background-size: cover;
+    background-position: center;
+}
+
+.title1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Anton', sans-serif;
+    background-color: white;
+}
+/*GRID 1*/
+/*GRID 2*/
+#prod_img2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 350px 350px ;
+    gap: 15px;
+    padding: 5px;
+    grid-template-areas: 
+    /*COL1      COL2     COL3*/
+    "prodGridp2 prodGridber1 prodGridber2" /*FILA 1*/
+    "prodGridp2 prodGridz1 prodGridz2" /*FILA 2*/
+}
+
+.prodGridp2{
+    grid-area: prodGridp2;
+}
+.prodGridber1{
+    grid-area: prodGridber1;
+}
+.prodGridber2{
+    grid-area: prodGridber2;
+}
+.prodGridz1{
+    grid-area: prodGridz1;
+}
+.prodGridz2{
+    grid-area: prodGridz2;
+}
+
+.prodGridp2{
+    background-image: url(../images/pant2.PNG);
+    background-size: cover;
+    background-position: center;
+}
+.prodGridber1{
+    background-image: url(../images/berm1.PNG);
+    background-size: cover;
+    background-position: center;
+}
+.prodGridber2{
+    background-image: url(../images/berm2.PNG);
+    background-size: cover;
+    background-position: center;
+}
+.prodGridz1{
+    background-image: url(../images/zap1.PNG);
+    background-size: cover;
+    background-position: center;
+}
+.prodGridz2{
+    background-image: url(../images/zap2.PNG);
+    background-size: cover;
+    background-position: center;
+}
+
+.title2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Anton', sans-serif;
+    background-color: white;
+}
+/*GRID 2*/
+/*GRID 3*/
+#prod_img3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 350px 350px ;
+    gap: 15px;
+    padding: 5px;
+    grid-template-areas: 
+    /*COL1      COL2     COL3*/
+    "prodGridbz1 prodGridpiluso prodGridcamisa" /*FILA 1*/
+    "prodGridbz2 prodGridremleb prodGridmuscl" /*FILA 2*/
+}
+
+.prodGridbz1{
+    grid-area: prodGridbz1;
+}
+.prodGridbz2{
+    grid-area: prodGridbz2;
+}
+.prodGridpil{
+    grid-area: prodGridpiluso;
+}
+.prodGridrleb{
+    grid-area: prodGridremleb;
+}
+.prodGridcam{
+    grid-area: prodGridcamisa;
+}
+.prodGridmuscl{
+    grid-area: prodGridmuscl;
+}
+
+
+.prodGridbz1{
+    background-image: url(../images/buzo1.PNG);
+    background-size: cover;
+    background-position: center;
+}
+.prodGridbz2{
+    background-image: url(../images/buzo2.PNG);
+    background-size: cover;
+    background-position: center;
+}
+.prodGridpil{
+    background-image: url(../images/pilusso.PNG);
+    background-size: cover;
+    background-position: center;
+}
+.prodGridrleb{
+    background-image: url(../images/remeraleb.PNG);
+    background-size: cover;
+    background-position: center;
+}
+.prodGridcam{
+    background-image: url(../images/camisa.PNG);
+    background-size: cover;
+    background-position: center;
+}
+.prodGridmuscl{
+    background-image: url(../images/muscl.PNG);
+    background-size: cover;
+    background-position: center;
+}
+.title3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Anton', sans-serif;
+    background-color: white;
+}
+/*GRID 3*/
+/*PAGINA PRODUCTOS*/
+
+/*===========================================================================*/
+/*MEDIA PAG PRODUCTOS GRID 1*/
+/*===========================================================================*/
+@media (max-width: 768px) {
+    #prod_img{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 400px);
+        grid-template-areas: 
+    /*COL1      COL2  */
+    "prodGridp1 prodGridr2" /*FILA 1*/
+    "prodGridp1 prodGridr4" /*FILA 2*/
+    "prodGridr1 prodGridr3"
+    ;
+    }
+}
+@media (max-width: 580px) {
+    #prod_img{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 400px);
+        grid-template-areas: 
+    /*COL1      COL2  */
+    "prodGridp1" /*FILA 1*/
+    "prodGridp1" /*FILA 2*/
+    "prodGridr1"
+    "prodGridr2"
+    "prodGridr3"
+    "prodGridr4";
+    width: 100vh;
+    }
+}
+/*===========================================================================*/
+/*MEDIA PAG PRODUCTOS GRID 2*/
+/*===========================================================================*/
+@media (max-width: 768px) {
+    #prod_img2{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 400px);
+        grid-template-areas: 
+    /*COL1      COL2  */
+    "prodGridp2 prodGridber1" /*FILA 1*/
+    "prodGridp2 prodGridber2" /*FILA 2*/
+    "prodGridz1 prodGridz2"
+    ;
+    }
+}
+@media (max-width: 580px) {
+    #prod_img2{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 400px);
+        grid-template-areas: 
+    /*COL1      COL2  */
+    "prodGridp2" /*FILA 1*/
+    "prodGridp2" /*FILA 2*/
+    "prodGridber1"
+    "prodGridber2"
+    "prodGridz1"
+    "prodGridz2"
+    ;
+    width: 100vh;
+    }
+    .Tituloprincipal{
+        width: 100vh;
+    }
+}
+/*===========================================================================*/
+/*MEDIA PAG PRODUCTOS GRID 3*/
+/*===========================================================================*/
+@media (max-width: 768px) {
+    #prod_img3{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 400px);
+        grid-template-areas: 
+    /*COL1      COL2  */
+    "prodGridbz1 prodGridbz2" /*FILA 1*/
+    "prodGridcamisa prodGridremleb" /*FILA 2*/
+    "prodGridmuscl prodGridpiluso"
+    ;
+    }
+}
+@media (max-width: 590px) {
+    #prod_img{
+        width: 100vh;
+    }
+    #prod_img2{
+        width: 100vh;
+    }
+    #prod_img3{
+        width: 100vh;
+    }
+    .Tituloprincipal{
+        width: 100vh;
+    }
+}
+@media (max-width: 580px) {
+    #prod_img3{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 400px);
+        grid-template-areas: 
+    /*COL1      COL2  */
+    "prodGridbz1" /*FILA 1*/
+    "prodGridbz2" /*FILA 2*/
+    "prodGridremleb"
+    "prodGridcamisa"
+    "prodGridpiluso"
+    "prodGridmuscl";
+    width: 100vh;
+    }
+}

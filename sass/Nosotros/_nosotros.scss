@@ -1,0 +1,86 @@
+/*PAGINA NOSOTROS*/
+.title_nosotros{
+    font-family:"Irish Grover";
+    background-color: white;
+    text-align: center;
+}
+.parte1nosotros{
+    height: 330px;
+    display: flex;
+    text-align: center;
+}
+.localft{
+    height: 300px;
+    width: 500px;
+}
+.parte2nosotros{
+    height: 330px;
+    display: flex;
+    text-align: center;
+}
+.fto_nosotros{
+    height: 300px;
+    width: 500px;
+}
+.title_orginp1{
+    font-family: 'Anton', sans-serif;
+}
+.title_actp2{
+    font-family: 'Anton', sans-serif;
+}
+.parrafo_origen{
+    text-align: center;
+}
+.parrafo_origen{
+    color: rgb(66, 82, 221);
+    font-family: 'Dhurjati', sans-serif;
+    font-size: 20px;
+}
+.parrafo_actualidad{
+    color: rgb(66, 82, 221);
+    font-family: 'Dhurjati', sans-serif;
+    font-size: 20px;
+}
+/*===========================================================================*/
+/*MEDIA NOSOTROS*/
+/*===========================================================================*/
+@media (max-width: 1150px){
+    .parrafo_actualidad , .parrafo_origen{
+        font-size: 18px;
+    }
+}
+@media (max-width: 1025px){
+    .parrafo_actualidad , .parrafo_origen{
+        font-size: 16px;
+    }
+}
+@media (max-width: 1000px){
+    .parte1nosotros, .parte2nosotros{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .parte1nosotros{
+        height: 550px;
+    }
+    .parte2nosotros{
+        height: 550px;
+    }
+    .parrafo_actualidad , .parrafo_origen{
+        font-size: 18px;
+    }
+}
+@media (max-width: 650px){
+    .parrafo_actualidad , .parrafo_origen{
+        font-size: 16px;
+    }
+}
+@media (max-width: 590px){
+    .title_nosotros{
+        width: 100vh;
+    }
+    .parte1nosotros, .parte2nosotros{
+        width: 100vh;
+    }
+}
