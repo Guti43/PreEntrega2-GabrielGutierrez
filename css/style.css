@@ -909,6 +909,14 @@ body {
 }
 @media (max-width: 800px) {
   #guia_tallesgrid {
+    width: 100%;
+  }
+  .tituloprincial_guia_talles {
+    width: 100%;
+  }
+}
+@media (max-width: 590px) {
+  #guia_tallesgrid {
     width: 100vh;
   }
   .tituloprincial_guia_talles {
