@@ -1,5 +1,5 @@
 /*HEADER Y NAV*/
-header{
+header {
     height: 70px;
     width: 100%;
     text-align: center;
@@ -8,40 +8,40 @@ header{
     z-index: 100;
     display: flex;
     align-items: center;
-}
-
-header nav ul{
-    display: inline;
-    margin-top: 13px;
-}
-header nav ul li{
-    display: inline;
-    font-size: 18px;
-    margin-left: 10px;
-}
-header nav ul li a{
-    font-size: 16px; 
-    margin-left: 10px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-header nav img{
-    width: 4%;
-    border-radius: 100%;
-}
-#nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-#nav a:hover{
-    color: gray;
+    nav {
+        ul {
+            display: inline;
+            margin-top: 13px;
+                li {
+                display: inline;
+                font-size: 18px;
+                margin-left: 10px;
+                    a {
+                    font-size: 16px;
+                    margin-left: 10px;
+                    text-decoration: none;
+                    color: white;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    img {
+        width: 4%;
+        border-radius: 100%;
+    }
+    #nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        a:hover {
+            color: gray;
+        }
+    }
 }
 .logo{
     width: 40px;
 }
-
 .d-flex{
     width: 100vh;
     margin-left: 30px;

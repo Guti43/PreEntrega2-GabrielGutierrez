@@ -53,6 +53,11 @@
         font-size: 30px;
     }
 }
+@media (max-width:768px){
+    .banner img {
+        height: 60vh;
+    }
+}
 @media (max-width:480px){
     .banner p{
         font-size: 20px;

@@ -103,18 +103,15 @@ header {
   display: flex;
   align-items: center;
 }
-
 header nav ul {
   display: inline;
   margin-top: 13px;
 }
-
 header nav ul li {
   display: inline;
   font-size: 18px;
   margin-left: 10px;
 }
-
 header nav ul li a {
   font-size: 16px;
   margin-left: 10px;
@@ -122,19 +119,16 @@ header nav ul li a {
   color: white;
   font-weight: bold;
 }
-
-header nav img {
+header img {
   width: 4%;
   border-radius: 100%;
 }
-
-#nav {
+header #nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
-#nav a:hover {
+header #nav a:hover {
   color: gray;
 }
 
@@ -961,6 +955,11 @@ body {
 @media (max-width: 768px) {
   .banner p {
     font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .banner img {
+    height: 60vh;
   }
 }
 @media (max-width: 480px) {
