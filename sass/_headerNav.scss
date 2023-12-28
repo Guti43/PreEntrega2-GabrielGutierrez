@@ -1,6 +1,8 @@
 /*HEADER Y NAV*/
+$altura-header: 70px;
+
 header {
-    height: 70px;
+    height: $altura-header;
     width: 100%;
     text-align: center;
     background-color: black;

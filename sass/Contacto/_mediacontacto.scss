@@ -1,6 +1,7 @@
 /*===========================================================================*/
 /*MEDIA CONTACTO*/
 /*===========================================================================*/
+/* Estilos para pantallas menores a 1200px */
 @media (max-width: 1200px){
     .parte1, .parte2, .nombre_form{
         width: 100%;
@@ -18,15 +19,29 @@
 @media (max-width: 630px){
     .googlemaps iframe{
         width: 500px;
-        height: 300px;
+        height: 400px;
     }
 }
-@media (max-width: 590px){
-    .titulo_contacto{
+@media (max-width: 590px) {
+    .titulo_contacto {
         width: 100vh;
     }
-    .parte1, .parte2{
+    .contenedor-partes {
+        width: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .parte1, .parte2 {
         width: 100vh;
         float: none;
+    }
+    .parte2 {
+        order: -1;
+        margin-top: 0;
+    }
+    .googlemaps iframe {
+        width: 500px;
+        height: 300px;
     }
 }

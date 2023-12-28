@@ -1,112 +1,99 @@
-/*PAGINA CONTACTO*/
-.titulo_contacto{
-    font-family:"Irish Grover";
-    background-color: white;
-    text-align: center;
-}
+$titulo-font: "Irish Grover";
+$subtitulo-font: 'Nova Square', sans-serif;
 
-.parte1, .parte2{
-    width: 50%;
-    box-sizing: border-box;
-    height: 100vh;
-}
-.parte1{
-    float: left;
-}
-.parte2{
-    float: right;
-}
-/*PARTE 1*/
-.iconocorreo{
-    width: 40px;
-    height: 40px;
-}
-.tex_emailcontacto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.titulo_email{
-    font-family: 'Nova Square', sans-serif;
-    color: white;
-}
-.correo_ow{
-    color: black;
-    font-size: 20px;
-}
-.nombre_form{
-    width: 300px;
-}
-#inputnombre{
-    width: 550px;
-}
-#inputemail{
-    width: 550px;
-}
-.mensajes{
-    padding: 20px;
-}
-.telefonolabel{
-    display: flex;
-    width: 150px; 
-    margin-right: 10px;
-}
-#telefono{
-    width: 550px;
-}
-.mensajelabel{
-    display: flex; 
-}
-.BottonEnv{
-    padding: 10px;
-    margin-left: 200px;
-}
-.enviar-btn{
-    margin-left: 210px;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-.enviar-btn:hover{
-    color: gray;
-}
-#mensaje{
-    width: 550px;
-    height: 200px;
-}
-/*PARTE 1*/
-/*PARTE 2*/
-.iconomap{
-    width: 40px;
-    height: 40px;
-}
-.text_dircontacto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.googlemaps{
+.titulo_contacto {
+    font-family: $titulo-font;
+    background-color: white;
     text-align: center;
     width: 100%;
 }
-.googlemaps iframe{
-    width: 600px;
-    height: 400px;
+.parte1, .parte2 {
+    width: 50%;
+    box-sizing: border-box;
+    height: 100vh;
+    &.parte1 {
+        float: left;
+        padding: 9px;
+    }
+    &.parte2 {
+        float: right;
+    }
 }
-.titulo_direccion{
-    font-family: 'Nova Square', sans-serif;
-    color: white;
+/* PARTE 1 */
+.iconocorreo {
+    width: 40px;
+    height: 40px;
 }
-.direccionav{
-    color: black;
-    font-size: 20px;
+.tex_emailcontacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .titulo_email {
+        font-family: $subtitulo-font;
+        color: white;
+    }
+    .correo_ow {
+        color: black;
+        font-size: 20px;
+    }
 }
-/*PARTE 2*/
-/*PAGINA CONTACTO*/
-/*===========================================================================*/
-/*MEDIA CONTACTO*/
-/*===========================================================================*/
+.nombre_form {
+    width: 300px;
+    #inputnombre,
+    #inputemail,
+    #telefono,
+    #mensaje {
+        width: 550px;
+    }
+    .telefonolabel {
+        display: flex;
+        width: 150px;
+        margin-right: 10px;
+    }
+    .BottonEnv {
+        padding: 10px;
+        margin-left: 200px;
+    }
+    .enviar-btn {
+        margin-left: 210px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        &:hover {
+            color: gray;
+        }
+    }
+    #mensaje {
+        width: 550px;
+        height: 200px;
+    }
+}
+.iconomap {
+    width: 40px;
+    height: 40px;
+}
+.text_dircontacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .titulo_direccion {
+        font-family: $subtitulo-font;
+        color: white;
+    }
+    .direccionav {
+        color: black;
+        font-size: 20px;
+    }
+}
+.googlemaps {
+    text-align: center;
+    width: 100%;
+    iframe {
+        width: 600px;
+        height: 400px;
+    }
+}
