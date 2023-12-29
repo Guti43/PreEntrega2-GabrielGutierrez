@@ -12,13 +12,6 @@
         "prodestacadosGrid1 prodestacadosGrid4"  /*FILA 2*/
         "prodestacadosGrid3 prodestacadosGrid5"  /*FILA 3*/
     }
-    #info_inicio .estilo{
-        width: 120px;
-        height: 120px;
-        h3{
-            font-size: 16px;
-        }
-    }
 }
 @media(max-width: 590px){
     #DestacadosProds, #info_inicio, .destacados_titulo{
@@ -56,7 +49,15 @@
     .banner p{
         font-size: 35px;
     }
-}
+    #info_inicio .estilo{
+        h3{
+            font-size: 16px;
+        }
+    }
+    }
+    .cuadrados_info{
+        font-size: 16px;
+    }
 @media (max-width: 800px){
     .banner p{
         font-size: 30px;
@@ -65,5 +66,20 @@
 @media (max-width: 650px){
     .banner p{
         font-size: 25px;
+    }
+    #info_inicio .info_titulo h2{
+        margin-top: -90px;
+    }
+    #info_inicio .estilo{
+    width: 120px;
+    height: 120px;
+    }
+    h3{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #info_inicio {
+        height: 250px;
     }
 }
